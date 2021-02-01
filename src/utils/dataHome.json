@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "title": "Great coffee made simple.",
+    "desc": "Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule."
+  },
+  "collection": {
+    "title": "Our collection",
+    "articles": [
+      {
+        "title": "Gran Espresso",
+        "desc": "Light and flavorful blend with cocoa and black pepper for an intense experience"
+      },
+      {
+        "title": "Planalto",
+        "desc": "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts"
+      },
+      {
+        "title": "Piccollo",
+        "desc": "Mild and smooth blend featuring notes of toasted almond and dried cherry"
+      },
+      {
+        "title": "Danche",
+        "desc": "Ethiopian hand-harvested blend densely packed with vibrant fruit notes"
+      }
+    ]
+  },
+  "why": {
+    "title": "Why choose us",
+    "desc": "A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.",
+    "articles": [
+      {
+        "title": "Best Quality",
+        "desc": "Discover an endless variety of the world’s best artisan coffee from each of our roasters."
+      },
+      {
+        "title": "Exclusive benefits",
+        "desc": "Special offers and swag when you subscribe, including 30% off your first shipment."
+      },
+      {
+        "title": "Free shipping",
+        "desc": "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
+      }
+    ]
+  },
+  "works": {
+    "title": "How it works",
+    "articles": [
+      {
+        "number": "01",
+        "title": "Pick rour coffee",
+        "desc": "Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out."
+      },
+      {
+        "number": "02",
+        "title": "Choose the frequency",
+        "desc": "Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal."
+      },
+      {
+        "number": "03",
+        "title": "Receive & enjoy!",
+        "desc": "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
+      }
+    ]
+  }
+}
