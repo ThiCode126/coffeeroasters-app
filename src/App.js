@@ -13,6 +13,17 @@ function App() {
   return (
     <Router>
       <Header />
+      <Switch>
+        <Route path="/about">
+          About
+        </Route>
+        <Route path="/plan">
+          Plan
+        </Route>
+        <Route exact path="/">
+          Home
+        </Route>
+      </Switch>
     </Router>
   );
 }
