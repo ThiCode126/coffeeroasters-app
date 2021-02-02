@@ -3,7 +3,12 @@ body {
   font-family: 'Barlow', sans-serif;
   font-style: normal;
   font-weight: normal;
-  height: 667px;
+  background: $lightCream;
+
+  .content-wrapper {
+    width: 327px;
+    margin: 0 auto;
+  }
 
   .title {
     font-family: 'Fraunces', serif;
@@ -15,6 +20,10 @@ body {
 */
 @media (min-width: 768px) {
   body {
+
+    .content-wrapper {
+      width: 689px;
+    }
   }
 }
 /**
@@ -22,5 +31,9 @@ body {
 */
 @media (min-width: 1440px) {
   body {
+
+    .content-wrapper {
+      width: 1280px;
+    }
   }
 }
