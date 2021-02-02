@@ -1,3 +1,45 @@
 header {
-  
+  .in-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 40px;
+
+    .logo {
+      width: 163px;
+      height: 18px;
+    }
+
+    .nav.nav-mobile {
+      position: relative;
+
+      .toggle-menu {
+        .close-menu {
+          width: 14px;
+          height: 13px;
+          cursor: pointer;
+        }
+        .open-menu {
+          width: 16px;
+          height: 15px;
+          cursor: pointer;
+        }
+      }
+
+      .navbar {
+
+        &.open {
+          position: absolute;
+          background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+          height: calc(100vh - 90px);
+          top: 58px;
+          right: 0;
+          width: 327px;
+        }
+        &.close {
+          display: none;
+        }
+      }
+    }
+    
+  }
 }
