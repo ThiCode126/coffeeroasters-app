@@ -5,11 +5,9 @@ import {
 } from "react-router-dom";
 
 import Header from "./Components/Header";
-
+import Home from "./pages/Home";
 
 function App() {
-
-
   return (
     <Router>
       <Header />
@@ -21,7 +19,7 @@ function App() {
           Plan
         </Route>
         <Route exact path="/">
-          Home
+          <Home />
         </Route>
       </Switch>
     </Router>
