@@ -1,10 +1,14 @@
 import React from 'react'
 
+import svgLogo from '../assets/logo.svg'
+
 const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <header>
+      <div className="content-wrapper">
+        <img src={svgLogo} className="logo" alt="logo" />
+      </div>
+    </header>
   )
 }
 

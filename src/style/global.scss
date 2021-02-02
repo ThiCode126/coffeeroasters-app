@@ -1,0 +1,26 @@
+  
+body {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  height: 667px;
+
+  .title {
+    font-family: 'Fraunces', serif;
+  }
+
+}
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  body {
+  }
+}
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+  body {
+  }
+}
