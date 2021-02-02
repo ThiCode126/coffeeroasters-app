@@ -8,7 +8,7 @@ import svgClose from "../assets/icon-close.svg";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const { width, isMobile } = useWindowDimensions();
+  const { isMobile } = useWindowDimensions();
 
   const toggleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -27,16 +27,22 @@ const Header = () => {
   };
 
   const Menu = () => {
-      return (
-        <div className={`nav nav-${isMobile ? "mobile" : "expand"}`}>
-          {isMobile && <Toggle />}
-          <nav className={`navbar ${isOpenMenu ? "open" : "close"}`}>
-                <Link className="link" to="/">Home</Link>
-                <Link className="link" to="/about">About Us</Link>
-                <Link className="link" to="/plan">Create You Plan</Link>
-          </nav>
-        </div>
-      );
+    return (
+      <div className={`nav nav-${isMobile ? "mobile" : "expand"}`}>
+        {isMobile && <Toggle />}
+        <nav className={`navbar ${isOpenMenu ? "open" : "close"}`}>
+          <Link className="link" to="/">
+            Home
+          </Link>
+          <Link className="link" to="/about">
+            About Us
+          </Link>
+          <Link className="link" to="/plan">
+            Create You Plan
+          </Link>
+        </nav>
+      </div>
+    );
   };
 
   return (
