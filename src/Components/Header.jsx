@@ -31,17 +31,9 @@ const Header = () => {
         <div className={`nav nav-${isMobile ? "mobile" : "expand"}`}>
           {isMobile && <Toggle />}
           <nav className={`navbar ${isOpenMenu ? "open" : "close"}`}>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/plan">Create You Plan</Link>
-              </li>
-            </ul>
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/about">About Us</Link>
+                <Link className="link" to="/plan">Create You Plan</Link>
           </nav>
         </div>
       );

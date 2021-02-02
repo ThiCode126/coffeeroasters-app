@@ -1,9 +1,20 @@
 $darkCyan: #0E8784;
 $btnHover: #66D2CF;
 $btnDisabled: #E2DEDB;
-$darkGryBlue: #333D4B;
+$darkGreyBlue: #333D4B;
 $paleOrange: #FDD6BA;
 $lightCream: #FEFCF7;
 $grey: #83888F;
 
 $optionDefault: #F4F1EB;
+
+
+@mixin text($font, $line, $ls: normal) {
+  font-size: $font;
+  line-height: $line;
+  letter-spacing: $ls;
+}
+@mixin fraunces {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+}
