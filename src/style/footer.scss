@@ -3,11 +3,32 @@
     background-color: var(--darkBack);
     padding: 54px 55px;
     @include grid1C(48.5px);
+    margin-bottom: 72px;
 
     .logo svg {
+      width: 217.85px;
+      height: 24px;
       path:first-child {
         fill: #fff;
       }
+    }
+
+    .navbar-footer {
+      @include grid1C(24px);
+      text-align: center;
+
+      .link {
+        @include text(12px, 15px, 0.923px);
+        color: var(--grey);
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .social {
+      @include grid1R(24px);
+      grid-template-columns: repeat(3, 24px);
+      justify-content: center;
     }
   }
 }
