@@ -1,0 +1,13 @@
+#footer {
+  .in-footer {
+    background-color: var(--darkBack);
+    padding: 54px 55px;
+    @include grid1C(48.5px);
+
+    .logo svg {
+      path:first-child {
+        fill: #fff;
+      }
+    }
+  }
+}
