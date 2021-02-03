@@ -47,7 +47,7 @@ header {
           a.link {
             @include fraunces;
             @include text(24px, 32px);
-            color: $darkGreyBlue;
+            color: var(--darkGreyBlue);
           }
         }
         &.close {
@@ -67,10 +67,10 @@ header {
           font-weight: bold;
           text-transform: uppercase;
           @include text(12px, 15px, 0.932px);
-          color: $grey;
+          color: var(--grey);
 
           &:hover {
-            color: $darkGreyBlue;
+            color: var(--darkGreyBlue);
           }
         }
       }
@@ -84,7 +84,6 @@ header {
 #hero {
   .in-hero {
     @include pX(24px, 24px);
-    color: $lightCream;
     text-align: center;
     border-radius: 10px;
 

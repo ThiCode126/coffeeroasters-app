@@ -2,7 +2,8 @@ body {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: normal;
-  background: $lightCream;
+  background: var(--lightCream);
+  color: var(--lightCream);
 
   .content-wrapper {
     width: 327px;
@@ -17,6 +18,10 @@ body {
     margin-bottom: 120px;
   }
 }
+* {
+  margin: 0;
+}
+
 /**
 * ? Tablet
 */

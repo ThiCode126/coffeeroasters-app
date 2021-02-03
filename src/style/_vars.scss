@@ -1,19 +1,21 @@
-$darkCyan: #0e8784;
-$btnHover: #66d2cf;
-$btnDisabled: #e2dedb;
-$darkGreyBlue: #333d4b;
-$paleOrange: #fdd6ba;
-$lightCream: #fefcf7;
-$grey: #83888f;
+:root {
+  --darkBack: #2c343e;
+  --darkCyan: #0e8784;
+  --btnHover: #66d2cf;
+  --btnDisabled: #e2dedb;
+  --darkGreyBlue: #333d4b;
+  --paleOrange: #fdd6ba;
+  --lightCream: #fefcf7;
+  --grey: #83888f;
+  --optionDefault: #f4f1eb;
+}
 
-$optionDefault: #f4f1eb;
-
-@mixin text($font, $line, $ls: normal) {
+@mixin text($font, $line: $font, $ls: normal) {
   font-size: $font;
   line-height: $line;
   letter-spacing: $ls;
 }
-@mixin pX($left: 0, $right: 0) {
+@mixin pX($left: 0, $right: $left) {
   padding-left: $left;
   padding-right: $right;
 }
@@ -25,4 +27,10 @@ $optionDefault: #f4f1eb;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin grid1C($gap: 0) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $gap;
 }

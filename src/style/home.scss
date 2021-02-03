@@ -1,0 +1,123 @@
+#home {
+  #collection {
+    h2.title {
+      background: linear-gradient(
+        var(--darkGreyBlue) 0%,
+        var(--lightCream) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include fraunces;
+      @include text(40px, 72px);
+      text-align: center;
+      color: var(--grey);
+      margin: 0 0 13px;
+    }
+
+    .cards {
+      @include grid1C(48px);
+
+      .card-article {
+        @include flexCenter;
+        flex-direction: column;
+        color: var(--darkGreyBlue);
+        @include pX(22px, 23px);
+
+        .img-coffee {
+          width: 200px;
+          height: 151px;
+        }
+        .title {
+          @include fraunces;
+          @include text(24px, 32px);
+          margin: 0 0 16px;
+        }
+        .desc {
+          @include text(15px, 25px);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #why {
+    height: 1499px;
+    .in-why {
+      background: var(--darkBack);
+      height: 902px;
+      padding: 64px 24px 0;
+      text-align: center;
+      border-radius: 12px;
+
+      .title {
+        @include fraunces;
+        @include text(28px, 28px);
+      }
+
+      .desc {
+        margin: 24px 0 64px;
+        @include text(15px, 25px);
+      }
+      .cards {
+        @include grid1C(24px);
+        .card-article {
+          background: var(--darkCyan);
+          border-radius: 8px;
+          padding: 72px 12px 51px;
+
+          &:first-child {
+            .card-desc {
+              @include pX(21.5px);
+            }
+          }
+
+          .card-title {
+            @include fraunces;
+            @include text(24px, 32px);
+            margin: 56px 0 24px;
+          }
+
+          .card-desc {
+            @include text(15px, 25px);
+            @include pX(23px, 20px);
+          }
+        }
+      }
+    }
+  }
+
+  #works {
+    text-align: center;
+    .title {
+      @include fraunces;
+      color: var(--grey);
+      margin: 0 0 80px;
+    }
+
+    .cards {
+      @include grid1C(56px);
+      margin-bottom: 79px;
+
+      .card-article {
+        @include grid1C(24px);
+
+        .number {
+          @include fraunces;
+          @include text(72px);
+          color: var(--paleOrange);
+        }
+
+        .card-title {
+          @include fraunces;
+          @include text(28px, 32px);
+          color: var(--darkGreyBlue);
+        }
+
+        .card-desc {
+          @include text(15px, 25px);
+          color: var(--darkGreyBlue);
+        }
+      }
+    }
+  }
+}

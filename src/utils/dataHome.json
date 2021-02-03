@@ -4,7 +4,7 @@
     "desc": "Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule."
   },
   "collection": {
-    "title": "Our collection",
+    "title": "our collection",
     "articles": [
       {
         "title": "Gran Espresso",
@@ -29,20 +29,23 @@
     ]
   },
   "why": {
-    "title": "Why choose us",
+    "title": "Why choose us?",
     "desc": "A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.",
     "articles": [
       {
         "title": "Best Quality",
-        "desc": "Discover an endless variety of the world’s best artisan coffee from each of our roasters."
+        "desc": "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+        "img": "icon-coffee-bean.svg"
       },
       {
         "title": "Exclusive benefits",
-        "desc": "Special offers and swag when you subscribe, including 30% off your first shipment."
+        "desc": "Special offers and swag when you subscribe, including 30% off your first shipment.",
+        "img": "icon-gift.svg"
       },
       {
         "title": "Free shipping",
-        "desc": "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
+        "desc": "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
+        "img": "icon-truck.svg"
       }
     ]
   },
@@ -61,7 +64,7 @@
       },
       {
         "number": "03",
-        "title": "Receive & enjoy!",
+        "title": "Receive and enjoy!",
         "desc": "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
       }
     ]

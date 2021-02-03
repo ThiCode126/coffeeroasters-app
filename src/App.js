@@ -6,6 +6,7 @@ import {
 
 import Header from "./Components/Header";
 import Home from "./pages/Home";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
