@@ -8,19 +8,23 @@
     "articles": [
       {
         "title": "Gran Espresso",
-        "desc": "Light and flavorful blend with cocoa and black pepper for an intense experience"
+        "desc": "Light and flavorful blend with cocoa and black pepper for an intense experience",
+        "img": "image-gran-espresso.png"
       },
       {
         "title": "Planalto",
-        "desc": "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts"
+        "desc": "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts",
+        "img": "image-planalto.png"
       },
       {
         "title": "Piccollo",
-        "desc": "Mild and smooth blend featuring notes of toasted almond and dried cherry"
+        "desc": "Mild and smooth blend featuring notes of toasted almond and dried cherry",
+        "img": "image-piccollo.png"
       },
       {
         "title": "Danche",
-        "desc": "Ethiopian hand-harvested blend densely packed with vibrant fruit notes"
+        "desc": "Ethiopian hand-harvested blend densely packed with vibrant fruit notes",
+        "img": "image-danche.png"
       }
     ]
   },

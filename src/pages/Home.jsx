@@ -1,4 +1,5 @@
 import React from "react";
+import Article from "../Components/Article";
 import Hero from "../Components/Hero";
 
 import data from "../utils/dataHome.json";
@@ -12,7 +13,9 @@ const Home = () => {
         <div className="content-wrapper">
           <div className="in-section in-collection">
             <h2 className="title">{collection.title}</h2>
-            {collection.articles.map((article) => console.log(article))}
+            {collection.articles.map((article, k) => (
+              <Article article={article} key={k} />
+            ))}
           </div>
         </div>
       </section>
