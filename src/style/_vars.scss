@@ -1,20 +1,28 @@
-$darkCyan: #0E8784;
-$btnHover: #66D2CF;
-$btnDisabled: #E2DEDB;
-$darkGreyBlue: #333D4B;
-$paleOrange: #FDD6BA;
-$lightCream: #FEFCF7;
-$grey: #83888F;
+$darkCyan: #0e8784;
+$btnHover: #66d2cf;
+$btnDisabled: #e2dedb;
+$darkGreyBlue: #333d4b;
+$paleOrange: #fdd6ba;
+$lightCream: #fefcf7;
+$grey: #83888f;
 
-$optionDefault: #F4F1EB;
-
+$optionDefault: #f4f1eb;
 
 @mixin text($font, $line, $ls: normal) {
   font-size: $font;
   line-height: $line;
   letter-spacing: $ls;
 }
+@mixin pX($left: 0, $right: 0) {
+  padding-left: $left;
+  padding-right: $right;
+}
 @mixin fraunces {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

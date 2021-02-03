@@ -28,7 +28,11 @@ header {
       .navbar {
         &.open {
           position: absolute;
-          background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+          background: linear-gradient(
+            180deg,
+            rgba(254, 252, 247, 0.504981) 0%,
+            #fefcf7 55.94%
+          );
           height: calc(100vh - 90px);
           top: 58px;
           right: 0;
@@ -45,7 +49,6 @@ header {
             @include text(24px, 32px);
             color: $darkGreyBlue;
           }
-          
         }
         &.close {
           display: none;
@@ -70,9 +73,39 @@ header {
             color: $darkGreyBlue;
           }
         }
-
       }
     }
-    
+  }
+}
+/**
+* ? Hero
+*/
+
+#hero {
+  .in-hero {
+    @include pX(24px, 24px);
+    color: $lightCream;
+    text-align: center;
+    border-radius: 10px;
+
+    &.in-home {
+      height: 400px;
+      background: url("../assets/home/mobile/image-hero-coffeepress.jpg")
+        no-repeat;
+      background-size: contain;
+      padding-top: 100px;
+    }
+
+    .title {
+      @include fraunces;
+      @include text(40px, 40px);
+      margin: 0 0 24px;
+    }
+
+    .desc {
+      @include text(15px, 25px);
+      opacity: 0.8;
+      margin: 0 0 39px;
+    }
   }
 }

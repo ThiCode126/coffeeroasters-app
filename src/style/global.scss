@@ -1,6 +1,5 @@
-  
 body {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: normal;
   background: $lightCream;
@@ -10,22 +9,19 @@ body {
     margin: 0 auto;
   }
 
-  // .title {
-  //   font-family: 'Fraunces', serif;
-  //   font-weight: 900;
-  // }
-
   a {
     text-decoration: none;
   }
 
+  section {
+    margin-bottom: 120px;
+  }
 }
 /**
 * ? Tablet
 */
 @media (min-width: 768px) {
   body {
-
     .content-wrapper {
       width: 689px;
     }
@@ -36,7 +32,6 @@ body {
 */
 @media (min-width: 1440px) {
   body {
-
     .content-wrapper {
       width: 1280px;
     }

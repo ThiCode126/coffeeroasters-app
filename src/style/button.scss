@@ -1,0 +1,10 @@
+.create-btn {
+  background-color: $darkCyan;
+  border-radius: 6px;
+  width: 217px;
+  height: 56px;
+  margin: 0 auto;
+  @include flexCenter;
+  @include fraunces;
+  @include text(18px, 28px);
+}
