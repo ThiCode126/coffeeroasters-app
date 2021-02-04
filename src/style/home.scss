@@ -230,4 +230,114 @@
 * ? DeskTop
 */
 @media (min-width: 1440px) {
+  #home {
+    #collection {
+      h2.title {
+        @include text(156px, 196px);
+      }
+
+      .cards {
+        margin: -77px auto 0;
+        width: 1111px;
+        grid-auto-flow: column;
+        grid-auto-columns: 255px;
+        gap: 30px;
+
+        .card-article {
+          display: flex;
+          padding: 0;
+
+          .img-coffee {
+            width: 255px;
+            height: 193px;
+            margin-left: 0;
+          }
+          .title {
+            align-self: initial;
+            margin-top: 74.5px;
+          }
+          .desc {
+            padding-right: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    #why {
+      height: 728px;
+      .in-why {
+        height: 477px;
+        padding: 100px 85px 0;
+
+        .title {
+          @include text(40px, 48px);
+        }
+
+        .desc {
+          margin: 32px auto 86px;
+          width: 540px;
+          @include text(16px, 26px);
+        }
+        .cards {
+          grid-auto-flow: column;
+          gap: 30px;
+
+          .card-article {
+            display: flex;
+            flex-direction: column;
+            padding: 72px 48px 48px 47px;
+            width: 255px;
+            text-align: center;
+
+            .img-icon {
+              height: 72px;
+              width: 72px;
+              margin-right: 0;
+            }
+
+            .card-title {
+              margin: 56px 0 24px;
+              align-self: initial;
+            }
+
+            .card-desc {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+
+    #works {
+      text-align: left;
+      .title {
+        margin-bottom: 80px;
+      }
+
+      .cards {
+        width: 1045px;
+        gap: 95px;
+        margin-bottom: 64px;
+
+        .card-article {
+          gap: 38px;
+
+          .number {
+            margin-bottom: 4px;
+            height: 72px;
+          }
+
+          .card-title {
+            @include text(32px, 36px);
+            margin-right: 30px;
+          }
+
+          .card-desc {
+            @include text(16px, 26px);
+          }
+        }
+      }
+    }
+  }
 }

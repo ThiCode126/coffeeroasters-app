@@ -36,8 +36,7 @@
 @media (min-width: 768px) {
   #footer {
     .in-footer {
-      padding-right: 190px;
-      padding-left: 215px;
+      @include pX(215px, 190px);
       @include grid1C(32px);
 
       .logo {
@@ -60,4 +59,29 @@
 * ? DeskTop
 */
 @media (min-width: 1440px) {
+  #footer {
+    .in-footer {
+      display: flex;
+      gap: 0;
+      padding: 47px 85px 47px;
+
+      .logo {
+        width: initial;
+        height: 26px;
+        margin: 0 102.9px 0 0;
+      }
+
+      .navbar-footer {
+        align-items: center;
+        grid-auto-columns: max-content;
+        grid-template-rows: 15px;
+        align-self: center;
+      }
+
+      .social {
+        margin-top: 0;
+        margin-left: 368px;
+      }
+    }
+  }
 }
