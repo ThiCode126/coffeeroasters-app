@@ -97,7 +97,7 @@ header {
 
     .title {
       @include fraunces;
-      @include text(40px, 40px);
+      @include text(40px);
       margin: 0 0 24px;
     }
 
@@ -107,4 +107,41 @@ header {
       margin: 0 0 39px;
     }
   }
+}
+
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  #hero {
+    .in-hero {
+      @include pX(58px, 233px);
+      text-align: left;
+
+      &.in-home {
+        height: 400px;
+        background: url("../assets/home/tablet/image-hero-coffeepress.jpg")
+          no-repeat;
+        background-size: contain;
+        padding-top: 104px;
+      }
+
+      .title {
+        @include text(48px);
+      }
+
+      .desc {
+        margin-bottom: 40px;
+      }
+
+      .create-btn {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
 }

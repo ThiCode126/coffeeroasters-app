@@ -122,3 +122,98 @@
     }
   }
 }
+
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  #home {
+    #collection {
+      h2.title {
+        @include text(96px, 118px);
+        margin: 0;
+      }
+
+      .cards {
+        margin-top: -47px;
+
+        .card-article {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+
+          .img-coffee {
+            width: 255px;
+            height: 193px;
+            grid-row: 1 / 3;
+            margin-left: 49px;
+          }
+          .title {
+            align-self: flex-end;
+            margin-bottom: 24px;
+          }
+          .desc {
+            align-self: flex-start;
+            padding-right: 40px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    #why {
+      height: 863px;
+      .in-why {
+        height: 573px;
+        padding: 56px 74px 0;
+
+        .title {
+          @include text(32px, 48px);
+        }
+
+        .desc {
+          margin-bottom: 70px;
+        }
+        .cards {
+          .card-article {
+            display: grid;
+            grid-template-columns: auto 344px;
+            grid-template-rows: 48px 50px;
+            padding: 41px 48px 41px 70px;
+            text-align: left;
+
+            &:first-child {
+              .card-desc {
+                padding: 0;
+              }
+            }
+
+            .img-icon {
+              grid-row: 1 / 3;
+              align-self: center;
+              justify-self: center;
+              height: 56px;
+              width: 56px;
+              margin-right: 55px;
+            }
+
+            .card-title {
+              margin: 0;
+              align-self: flex-end;
+              margin-bottom: 16px;
+            }
+
+            .card-desc {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+}
