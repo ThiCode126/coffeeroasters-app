@@ -5,12 +5,9 @@
     @include grid1C(48.5px);
     margin-bottom: 72px;
 
-    .logo svg {
+    .logo {
       width: 217.85px;
       height: 24px;
-      path:first-child {
-        fill: #fff;
-      }
     }
 
     .navbar-footer {
@@ -31,4 +28,36 @@
       justify-content: center;
     }
   }
+}
+
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  #footer {
+    .in-footer {
+      padding-right: 190px;
+      padding-left: 215px;
+      @include grid1C(32px);
+
+      .logo {
+        width: 217.85px;
+        height: 24px;
+        margin: 0 auto;
+      }
+
+      .navbar-footer {
+        @include grid1R(32px);
+      }
+
+      .social {
+        margin-top: 33px;
+      }
+    }
+  }
+}
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
 }

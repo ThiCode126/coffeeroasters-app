@@ -7,7 +7,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="content-wrapper">
         <div className="in-footer">
-          <ReactSVG src="assets/logo.svg" className="logo" />
+          <img src="assets/logo-white.svg" className="logo" alt="logo" />
           <nav className="navbar-footer">
             <Link className="link" to="/">
               Home
