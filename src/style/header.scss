@@ -134,6 +134,22 @@ header {
         no-repeat;
       background-size: contain;
       padding-top: 100px;
+
+      .title {
+        @include text(40px);
+      }
+    }
+
+    &.in-about {
+      height: 289px;
+      background: url("../assets/about/mobile/image-hero-whitecup.jpg")
+        no-repeat;
+      background-size: contain;
+      padding-top: 111px;
+
+      .title {
+        @include text(28px);
+      }
     }
 
     .title {

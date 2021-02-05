@@ -1,0 +1,69 @@
+#about {
+  #commit {
+    .img-commit {
+      width: 327px;
+      height: 400px;
+      background: url("../assets/about/mobile/image-commitment.jpg");
+      background-size: contain;
+    }
+    .text-commit {
+      color: var(--darkGreyBlue);
+      text-align: center;
+
+      .title {
+        margin-top: 48px;
+        margin-bottom: 30px;
+        @include fraunces;
+        @include text(32px, 48px);
+      }
+
+      .desc {
+        @include text(15px, 25px);
+        opacity: 0.8;
+      }
+    }
+  }
+
+  #quality {
+    .in-quality {
+      background: var(--darkGreyBlue);
+      border-radius: 10px;
+      position: relative;
+      padding: 142px 24px 61px;
+
+      .img-quality {
+        width: 279px;
+        height: 156px;
+        background: url("../assets/about/mobile/image-quality.jpg");
+        background-size: contain;
+        border-radius: 10px;
+        position: absolute;
+        top: -78px;
+        left: 24px;
+      }
+      .text-quality {
+        text-align: center;
+
+        .title {
+          margin-bottom: 24px;
+          @include fraunces;
+          @include text(28px, 28px);
+        }
+
+        .desc {
+          @include text(15px, 25px);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  #country {
+    .title {
+      text-align: center;
+      color: var(--grey);
+      @include fraunces;
+      @include text(24px, 32px);
+    }
+  }
+}

@@ -7,6 +7,7 @@ import {
 import Header from "./Components/Header";
 import Home from "./pages/Home";
 import Footer from "./Components/Footer";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/about">
-          About
+          <About />
         </Route>
         <Route path="/plan">
           Plan
