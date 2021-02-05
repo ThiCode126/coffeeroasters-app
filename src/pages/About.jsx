@@ -35,9 +35,11 @@ const About = () => {
         <div className="content-wrapper">
           <div className="in-section in-country">
             <h2 className="title">{country.title}</h2>
-            {country.articles.map((article, k) => (
-              <CardCountry article={article} key={k} />
-            ))}
+            <div className="country-cards">
+              {country.articles.map((article, k) => (
+                <CardCountry article={article} key={k} />
+              ))}
+            </div>
           </div>
         </div>
       </section>

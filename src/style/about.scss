@@ -62,8 +62,29 @@
     .title {
       text-align: center;
       color: var(--grey);
+      margin-bottom: 72px;
       @include fraunces;
       @include text(24px, 32px);
+    }
+
+    .country-cards {
+      @include grid1C(80px);
+
+      .card-country {
+        color: var(--darkGreyBlue);
+        text-align: center;
+
+        .card-title {
+          margin-bottom: 22px;
+          margin-top: 48px;
+          @include fraunces;
+          @include text(28px, 36px);
+        }
+
+        .address {
+          @include text(16px, 26px);
+        }
+      }
     }
   }
 }
