@@ -1,70 +1,63 @@
+# Frontend Mentor - Coffeeroasters subscription site
+
+![Design preview for the Coffeeroasters subscription site coding challenge](./preview.jpg)
+
+## Welcome! 👋
+
+Thanks for purchasing this premium Frontend Mentor coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. These premium challenges are perfect portfolio pieces, so please do feel free to use what you build in your portfolio to show others.
+
+**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+
+## The challenge
+
+Your challenge is to build out this multi-page coffee subscription website and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+- View the optimal layout for each page depending on their device's screen size
+- See hover states for all interactive elements throughout the site
+- Make selections to create a coffee subscription and see an order summary modal of their choices (details provided below)
+
+### Expected bahaviour
+
+The interactive subscription page has a number of specific behaviours, which are listed below:
+
+- If "Capsule" is selected for the first option
+  - The "Want us to grind them?" section should be disabled and not able to be opened
+- Order summary texts updates
+  - If "Capsule" is selected, update the order summary text to:
+    - "I drink my coffee **using** Capsules"
+    - Remove the grind selection text
+  - If "Filter" or "Espresso" are selected, update the order summary text to:
+    - "I drink my coffee **as** Filter||Espresso"
+    - Keep/Add the grind selection text
+  - For all other selections, add the selection title in the blank space where appropriate
+- Updating per shipment price (shown in "How often should we deliver?" section at the bottom) based on weight selected
+  - If 250g weight is selected
+    - Every Week price per shipment is $7.20
+    - Every 2 Weeks price per shipment is $9.60
+    - Every Month price per shipment is $12.00
+  - If 500g weight is selected
+    - Every Week price per shipment is $13.00
+    - Every 2 Weeks price per shipment is $17.50
+    - Every Month price per shipment is $22.00
+  - If 1000g weight is selected
+    - Every Week price per shipment is $22.00
+    - Every 2 Weeks price per shipment is $32.00
+    - Every Month price per shipment is $42.00
+- Calculating per month cost for the Order Summary modal
+  - If Every Week is selected, the Order Summary modal should show the per shipment price multiplied by 4. For example, if 250g weight is selected, the price would be $28.80/month
+  - If Every 2 Weeks is selected, the Order Summary modal should show the per shipment price multiplied by 2. For example, if 250g weight is selected, the price would be $19.20/month
+  - If Every Month is selected, the Order Summary modal should show the per shipment price multiplied by 1. For example, if 250g weight is selected, the price would be $12.00/month
+
+The designs show these differences, so you can refer to them to get an idea of what's needed for the different states.
+
+Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
