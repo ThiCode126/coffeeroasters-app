@@ -1,0 +1,120 @@
+{
+  "hero": {
+    "title": "Create a plan",
+    "desc": "Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door."
+  },
+  "step": [
+    {
+      "id": "01",
+      "name": "Preferences",
+      "title": "How do you drink your coffee?",
+      "choice": [
+        {
+          "title" : "Capsule",
+          "desc" : "Compatible with Nespresso systems and similar brewers"
+        },
+        {
+          "title" : "Filter",
+          "desc" : "For pour over or drip methods like Aeropress, Chemex, and V60"
+        },
+        {
+          "title" : "Espresso",
+          "desc" : "Dense and finely ground beans for an intense, flavorful experience"
+        }
+      ]
+
+    },
+    {
+      "id": "02",
+      "name": "Bean Type",
+      "title": "What type of coffee?",
+      "choice": [
+        {
+          "title" : "Single Origin",
+          "desc" : "Distinct, high quality coffee from a specific family-owned farm"
+        },
+        {
+          "title" : "Decaf",
+          "desc" : "Just like regular coffee, except the caffeine has been removed"
+        },
+        {
+          "title" : "Blended",
+          "desc" : "Combination of two or three dark roasted beans of organic coffees"
+        }
+      ]
+
+    },
+    {
+      "id": "03",
+      "name": "Quantity",
+      "title": "How much would you like?",
+      "choice": [
+        {
+          "title" : "250g",
+          "desc" : "Perfect for the solo drinker. Yields about 12 delicious cups."
+        },
+        {
+          "title" : "500g",
+          "desc" : "Perfect option for a couple. Yields about 40 delectable cups."
+        },
+        {
+          "title" : "1000g",
+          "desc" : "Perfect for offices and events. Yields about 90 delightful cups."
+        }
+      ]
+
+    },
+    {
+      "id": "04",
+      "name": "Grind Option",
+      "title": "Want us to grind them?",
+      "choice": [
+        {
+          "title" : "WholeBean",
+          "desc" : "Best choice if you cherish the full sensory experience"
+        },
+        {
+          "title" : "Filter",
+          "desc" : "Best choice if you cherish the full sensory experience"
+        },
+        {
+          "title" : "Cafetiére",
+          "desc" : "Course ground beans specially suited for french press coffee"
+        }
+      ]
+
+    },
+    {
+      "id": "05",
+      "name": "Deliveries",
+      "title": "How often should we deliver?",
+      "choice": [
+        {
+          "title" : "Every Week",
+          "desc" : "$14.00 per shipment. Includes free first-class shipping."
+        },
+        {
+          "title" : "Every 2 weeks",
+          "desc" : "$17.25 per shipment. Includes free priority shipping."
+        },
+        {
+          "title" : "Every month",
+          "desc" : "$22.50 per shipment. Includes free priority shipping."
+        }
+      ]
+
+    }
+  ],
+  "summary": {
+    "title" : "Order Summary",
+    "text" : [
+      "\"I drink coffee ",
+      ", with a ",
+      " type of bean. ",
+      " ground ala ",
+      ", sent to me "
+    ],
+    "check" : "Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout."
+  }
+  
+}

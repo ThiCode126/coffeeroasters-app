@@ -141,7 +141,7 @@ header {
     }
 
     &.in-about {
-      height: 289px;
+      height: 287px;
       background: url("../assets/about/mobile/image-hero-whitecup.jpg")
         no-repeat;
       background-size: contain;
@@ -183,6 +183,18 @@ header {
         padding-top: 104px;
       }
 
+      &.in-about {
+        height: 282px;
+        background: url("../assets/about/tablet/image-hero-whitecup.jpg")
+          no-repeat;
+        background-size: contain;
+        padding-top: 118px;
+
+        .title {
+          @include text(32px, 40px);
+        }
+      }
+
       .title {
         @include text(48px);
       }
@@ -207,6 +219,23 @@ header {
           no-repeat;
         background-size: contain;
         padding-top: 117px;
+      }
+
+      &.in-about {
+        height: 313px;
+        background: url("../assets/about/desktop/image-hero-whitecup.jpg")
+          no-repeat;
+        background-size: contain;
+        padding-top: 137px;
+        padding-right: 750px;
+
+        .title {
+          @include text(40px, 48px);
+        }
+      }
+
+      .desc {
+        @include text(16px, 26px);
       }
     }
   }
