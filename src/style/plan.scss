@@ -1,0 +1,76 @@
+#plan {
+  #works {
+    .in-works {
+      text-align: center;
+      background: url("../assets/plan/mobile/bg-steps.png");
+      margin-left: -24px;
+      margin-right: -24px;
+      padding: 80px 24px 79px;
+      border-radius: 10px;
+
+      .cards {
+        @include grid1C(56px);
+
+        .card-article {
+          @include grid1C(24px);
+
+          .number {
+            @include fraunces;
+            @include text(72px);
+            color: var(--paleOrange);
+          }
+
+          .card-title {
+            @include fraunces;
+            @include text(28px, 32px);
+            color: #fff;
+          }
+
+          .card-desc {
+            @include text(15px, 25px);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+/*
+
+
+  #works {
+    text-align: center;
+    .title {
+      @include fraunces;
+      @include text(24px, 32px);
+      color: var(--grey);
+      margin: 0 0 80px;
+    }
+
+    .cards {
+      @include grid1C(56px);
+      margin-bottom: 79px;
+
+      .card-article {
+        @include grid1C(24px);
+
+        .number {
+          @include fraunces;
+          @include text(72px);
+          color: var(--paleOrange);
+        }
+
+        .card-title {
+          @include fraunces;
+          @include text(28px, 32px);
+          color: var(--darkGreyBlue);
+        }
+
+        .card-desc {
+          @include text(15px, 25px);
+          color: var(--darkGreyBlue);
+        }
+      }
+    }
+  }
+  */

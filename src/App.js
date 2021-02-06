@@ -8,6 +8,7 @@ import Header from "./Components/Header";
 import Home from "./pages/Home";
 import Footer from "./Components/Footer";
 import About from "./pages/About";
+import Plan from "./pages/Plan";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           <About />
         </Route>
         <Route path="/plan">
-          Plan
+          <Plan />
         </Route>
         <Route exact path="/">
           <Home />

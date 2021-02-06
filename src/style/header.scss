@@ -152,6 +152,13 @@ header {
       }
     }
 
+    &.in-plan {
+      height: 299px;
+      background: url("../assets/plan/mobile/image-hero-blackcup.jpg") no-repeat;
+      background-size: contain;
+      padding-top: 101px;
+    }
+
     .title {
       @include fraunces;
       @include text(40px);
