@@ -34,6 +34,83 @@
       }
     }
   }
+
+  #plan {
+    .cards {
+      .accordion {
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        color: var(--grey);
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        @include fraunces;
+        @include text(24px, 28px);
+        margin-bottom: 32px;
+
+        .title {
+          width: 240px;
+        }
+
+        &:after {
+          @include flexCenter;
+          content: url("../assets/plan/icon-arrow.svg");
+          height: 100%;
+          transition: all 400ms ease;
+        }
+
+        &.active:after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .accordion.active + .panel {
+        @include grid1C(16px);
+      }
+
+      .panel {
+        overflow: hidden;
+        color: black;
+        transition: max-height 0.2s ease-out;
+        margin-bottom: 110px;
+        display: none;
+
+        .choice {
+          input[type="radio"] {
+            opacity: 0;
+            position: fixed;
+            width: 0;
+          }
+
+          label {
+            display: block;
+            background-color: var(--optionDefault);
+            padding: 24px 25px;
+            border-radius: 8px;
+
+            .title {
+              @include fraunces;
+              @include text(24px, 32px);
+              margin-bottom: 8px;
+            }
+
+            .desc {
+              @include text(16px, 26px);
+            }
+          }
+
+          input[type="radio"]:checked + label {
+            background-color: var(--darkCyan);
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 /*
 
