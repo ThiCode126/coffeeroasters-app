@@ -134,10 +134,6 @@ header {
         no-repeat;
       background-size: contain;
       padding-top: 100px;
-
-      .title {
-        @include text(40px);
-      }
     }
 
     &.in-about {
@@ -226,7 +222,7 @@ header {
 @media (min-width: 1440px) {
   #hero {
     .in-hero {
-      @include pX(85px, 702px);
+      padding-left: 85px;
 
       &.in-home {
         height: 483px;
@@ -234,6 +230,7 @@ header {
           no-repeat;
         background-size: contain;
         padding-top: 117px;
+        padding-right: 702px;
       }
 
       &.in-about {
@@ -247,6 +244,19 @@ header {
         .title {
           @include text(40px, 48px);
         }
+      }
+
+      &.in-plan {
+        height: 316px;
+        background: url("../assets/plan/desktop/image-hero-blackcup.jpg")
+          no-repeat;
+        background-size: contain;
+        padding-top: 134px;
+        padding-right: 708px;
+      }
+
+      .title {
+        @include text(72px);
       }
 
       .desc {

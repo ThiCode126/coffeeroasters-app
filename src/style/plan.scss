@@ -36,6 +36,9 @@
   }
 
   #choice {
+    .menu-left {
+      display: none;
+    }
     .cards {
       .accordion {
         display: flex;
@@ -51,6 +54,10 @@
         @include fraunces;
         @include text(24px, 28px);
         margin-bottom: 32px;
+
+        &:disabled {
+          opacity: 0.5;
+        }
 
         .title {
           width: 240px;
@@ -135,6 +142,7 @@
     #choice {
       .cards {
         .accordion {
+          @include text(32px, 48px);
           margin-bottom: 40px;
           .title {
             width: calc(100% - 20px);
@@ -169,4 +177,113 @@
 * ? DeskTop
 */
 @media (min-width: 1440px) {
+  #plan {
+    #works {
+      .in-works {
+        background: url("../assets/plan/desktop/bg-steps.png");
+        mix-blend-mode: normal;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 198px 150px 99px 85px;
+
+        .cards {
+          gap: 95px;
+
+          .card-article {
+            .card-title {
+              @include text(32px, 36px);
+              width: 255px;
+            }
+
+            .card-desc {
+              @include text(16px, 26px);
+            }
+          }
+        }
+      }
+    }
+
+    #choice {
+      .menu-left {
+        display: block;
+      }
+
+      .column {
+        display: flex;
+        @include pX(85px);
+
+        .menu-left {
+          margin-right: 125px;
+          width: 255px;
+
+          ul {
+            padding-left: 0;
+
+            li.list-menu {
+              &:not(:last-child) {
+                border-bottom: 1px solid rgba(131, 136, 143, 0.25);
+                padding-bottom: 24px;
+              }
+
+              &:not(:first-child) {
+                padding-top: 24px;
+              }
+            }
+          }
+
+          a.link-left {
+            @include fraunces;
+            @include text(24px, 32px);
+            color: var(--darkGreyBlue);
+
+            &:not(.active) {
+              opacity: 0.4;
+
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+            &.disabled {
+              pointer-events: none;
+              opacity: 0.2;
+              cursor: not-allowed;
+            }
+
+            .number {
+              color: var(--darkCyan);
+              margin-right: 28.5px;
+            }
+          }
+        }
+      }
+      .cards {
+        width: 730px;
+        .accordion {
+          font-size: 40px;
+          margin-bottom: 56px;
+        }
+
+        .accordion.active + .panel {
+          @include grid1R(23px);
+        }
+
+        .panel {
+          margin-bottom: 88px;
+
+          .choice {
+            label {
+              display: block;
+              background-color: var(--optionDefault);
+              padding: 32px 25px 84px 28px;
+
+              &:hover {
+                background: var(--paleOrange);
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

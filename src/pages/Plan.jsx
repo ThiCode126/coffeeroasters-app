@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CardWorks from "../Components/CardWorks";
 import Hero from "../Components/Hero";
 
@@ -21,6 +21,19 @@ const Plan = () => {
   defaultState[0]["active"] = true;
 
   const [myState, setMyState] = useState(defaultState);
+  const [lastActive, setLastActive] = useState(0);
+
+  useEffect(() => {
+    console.log(Object.keys(myState).length);
+    const nbrStep = Object.keys(myState).length - 1;
+    for (let i = nbrStep; i >= 0; i--) {
+      console.log(i);
+      if (myState[i]["active"] === true) {
+        setLastActive(i);
+        return;
+      }
+    }
+  }, [myState]);
 
   const onValueChange = (id, title) => {
     console.log(id);
@@ -46,7 +59,6 @@ const Plan = () => {
 
   const BtnSelect = ({ data }) => {
     const { id: stepId, title: stepTitle, name: stepName } = data;
-    console.log(stepId);
 
     const toggleAcc = (e) => {
       e.preventDefault();
@@ -105,10 +117,33 @@ const Plan = () => {
       <section id="choice">
         <div className="content-wrapper">
           <div className="in-section in-plan">
-            <div className="cards">
-              {step.map((data, k) => (
-                <BtnSelect data={data} key={k} />
-              ))}
+            <div className="column">
+              <div className="menu-left">
+                <ul>
+                  {step.map((data, k) => (
+                    <li className="list-menu" key={k}>
+                      <a
+                        className={`link-left${
+                          lastActive === data.id ? " active" : ""
+                        }${
+                          myState[data.id]["disabled"] === true
+                            ? " disabled"
+                            : ""
+                        }`}
+                        href={`#${data.id}`}
+                      >
+                        <span className="number">{data.number}</span>{" "}
+                        {data.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="cards">
+                {step.map((data, k) => (
+                  <BtnSelect data={data} key={k} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
