@@ -5,7 +5,7 @@
   },
   "step": [
     {
-      "id": "01",
+      "id": 0,
       "name": "Preferences",
       "title": "How do you drink your coffee?",
       "choice": [
@@ -25,7 +25,7 @@
 
     },
     {
-      "id": "02",
+      "id": 1,
       "name": "Bean Type",
       "title": "What type of coffee?",
       "choice": [
@@ -45,7 +45,7 @@
 
     },
     {
-      "id": "03",
+      "id": 2,
       "name": "Quantity",
       "title": "How much would you like?",
       "choice": [
@@ -65,7 +65,7 @@
 
     },
     {
-      "id": "04",
+      "id": 3,
       "name": "Grind Option",
       "title": "Want us to grind them?",
       "choice": [
@@ -85,7 +85,7 @@
 
     },
     {
-      "id": "05",
+      "id": 4,
       "name": "Deliveries",
       "title": "How often should we deliver?",
       "choice": [
