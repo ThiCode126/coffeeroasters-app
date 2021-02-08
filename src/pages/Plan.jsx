@@ -102,7 +102,7 @@ const Plan = () => {
           </div>
         </div>
       </section>
-      <section id="plan">
+      <section id="choice">
         <div className="content-wrapper">
           <div className="in-section in-plan">
             <div className="cards">

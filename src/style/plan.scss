@@ -35,7 +35,7 @@
     }
   }
 
-  #plan {
+  #choice {
     .cards {
       .accordion {
         display: flex;
@@ -112,42 +112,61 @@
     }
   }
 }
-/*
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  #plan {
+    #works {
+      .in-works {
+        text-align: left;
+        background: url("../assets/plan/tablet/bg-steps.png");
+        margin-left: -40px;
+        margin-right: -40px;
+        padding: 176px 39px 70px 40px;
 
-
-  #works {
-    text-align: center;
-    .title {
-      @include fraunces;
-      @include text(24px, 32px);
-      color: var(--grey);
-      margin: 0 0 80px;
+        .cards {
+          @include grid1R(10px);
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     }
 
-    .cards {
-      @include grid1C(56px);
-      margin-bottom: 79px;
-
-      .card-article {
-        @include grid1C(24px);
-
-        .number {
-          @include fraunces;
-          @include text(72px);
-          color: var(--paleOrange);
+    #choice {
+      .cards {
+        .accordion {
+          margin-bottom: 40px;
+          .title {
+            width: calc(100% - 20px);
+          }
         }
 
-        .card-title {
-          @include fraunces;
-          @include text(28px, 32px);
-          color: var(--darkGreyBlue);
+        .accordion.active + .panel {
+          @include grid1R(10px);
+          grid-template-columns: repeat(3, 1fr);
         }
 
-        .card-desc {
-          @include text(15px, 25px);
-          color: var(--darkGreyBlue);
+        .panel {
+          margin-bottom: 100px;
+
+          .choice {
+            label {
+              display: block;
+              background-color: var(--optionDefault);
+              padding: 32px 23px 57px 25px;
+
+              .title {
+                margin-bottom: 24px;
+              }
+            }
+          }
         }
       }
     }
   }
-  */
+}
+/**
+* ? DeskTop
+*/
+@media (min-width: 1440px) {
+}

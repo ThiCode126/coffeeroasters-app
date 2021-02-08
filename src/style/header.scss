@@ -202,6 +202,14 @@ header {
         }
       }
 
+      &.in-plan {
+        height: 273px;
+        background: url("../assets/plan/tablet/image-hero-blackcup.jpg")
+          no-repeat;
+        background-size: contain;
+        padding-top: 127px;
+      }
+
       .title {
         @include text(48px);
       }

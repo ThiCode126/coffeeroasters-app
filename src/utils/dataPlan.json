@@ -6,6 +6,7 @@
   "step": [
     {
       "id": 0,
+      "number": "01",
       "name": "Preferences",
       "title": "How do you drink your coffee?",
       "choice": [
@@ -26,6 +27,7 @@
     },
     {
       "id": 1,
+      "number": "02",
       "name": "Bean Type",
       "title": "What type of coffee?",
       "choice": [
@@ -46,6 +48,7 @@
     },
     {
       "id": 2,
+      "number": "03",
       "name": "Quantity",
       "title": "How much would you like?",
       "choice": [
@@ -66,6 +69,7 @@
     },
     {
       "id": 3,
+      "number": "04",
       "name": "Grind Option",
       "title": "Want us to grind them?",
       "choice": [
@@ -75,7 +79,7 @@
         },
         {
           "title" : "Filter",
-          "desc" : "Best choice if you cherish the full sensory experience"
+          "desc" : "For drip or pour-over coffee methods such as V60 or Aeropress"
         },
         {
           "title" : "Cafetiére",
@@ -86,6 +90,7 @@
     },
     {
       "id": 4,
+      "number": "05",
       "name": "Deliveries",
       "title": "How often should we deliver?",
       "choice": [
