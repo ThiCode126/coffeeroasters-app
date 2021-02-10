@@ -3,10 +3,19 @@
   @include flexCenter;
   @include fraunces;
   @include text(18px, 25px);
-  background-color: var(--darkCyan);
+  background: var(--darkCyan);
   border-radius: 6px;
   height: 56px;
   margin: 0 auto;
+
+  &:hover {
+    background: var(--btnHover);
+  }
+
+  &.disabled {
+    background: var(--btnDisabled);
+    cursor: not-allowed;
+  }
 }
 
 .create-btn {
@@ -56,6 +65,7 @@
         @include text(15px, 25px);
         color: var(--darkGreyBlue);
         opacity: 0.8;
+        margin-bottom: 24px;
       }
     }
   }
@@ -88,26 +98,22 @@
           .check-text {
             @include text(16px, 26px);
             margin-top: 7px;
+            margin-bottom: 47px;
           }
         }
 
         .wrap-btn {
           display: flex;
           align-items: center;
-          margin-top: 47px;
+          justify-content: space-between;
+
           .price-month {
             color: var(--darkGreyBlue);
-            margin-right: 13px;
             @include fraunces;
             @include text(32px, 36px);
           }
         }
       }
     }
-  }
-}
-@media (min-width: 1440px) {
-  .checkout-btn {
-    margin-right: 0;
   }
 }

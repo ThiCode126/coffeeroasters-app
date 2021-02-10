@@ -1,8 +1,11 @@
 import React from "react";
 
-const Button = ({ openModal }) => {
+const Button = ({ openModal, isDisabled }) => {
   return openModal ? (
-    <div onClick={openModal} className="btn create-btn">
+    <div
+      onClick={isDisabled ? () => {} : openModal}
+      className={`btn create-btn${isDisabled ? " disabled" : ""}`}
+    >
       Create your plan
     </div>
   ) : (

@@ -31,6 +31,7 @@ const Plan = () => {
   const [lastActive, setLastActive] = useState(0);
   const [priceTotal, setPriceTotal] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(true);
 
   useEffect(() => {
     const nbrStep = Object.keys(myState).length - 1;
@@ -243,7 +244,7 @@ const Plan = () => {
                     dangerouslySetInnerHTML={orderText()}
                   />
                 </div>
-                <Button openModal={openModal} />
+                <Button isDisabled={isDisabled} openModal={openModal} />
               </div>
             </div>
           </div>
