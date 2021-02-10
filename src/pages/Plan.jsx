@@ -34,6 +34,17 @@ const Plan = () => {
   const [isDisabled, setIsDisabled] = useState(true);
 
   useEffect(() => {
+    // If Capsule ou
+    if (
+      (myState[0]["id"] === 0 ||
+        (myState[0]["id"] > 0 && myState[3]["id"] !== null)) &&
+      myState[1]["id"] !== null &&
+      myState[2]["id"] !== null &&
+      myState[4]["id"] !== null
+    ) {
+      setIsDisabled(false);
+    }
+
     const nbrStep = Object.keys(myState).length - 1;
     for (let i = nbrStep; i >= 0; i--) {
       if (myState[i]["active"] === true) {
