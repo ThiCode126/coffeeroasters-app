@@ -17,6 +17,15 @@ body {
   section {
     margin-bottom: 120px;
   }
+
+  .order-text {
+    @include fraunces;
+    @include text(24px, 40px);
+
+    .green-text {
+      color: var(--darkCyan);
+    }
+  }
 }
 * {
   margin: 0;
@@ -35,8 +44,10 @@ body {
       margin-bottom: 144px;
     }
 
-    .create-btn {
-      margin: 0 !important;
+    #home {
+      .create-btn {
+        margin: 0 !important;
+      }
     }
   }
 }

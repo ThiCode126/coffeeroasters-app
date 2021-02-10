@@ -118,6 +118,21 @@
       }
     }
   }
+
+  #order {
+    background: url("../assets/plan/mobile/bg-order-summary.png");
+    padding: 32px 24px 32px 25px;
+    border-radius: 10px;
+    margin-bottom: 56px;
+
+    .title {
+      @include text(16px, 26px);
+      text-transform: uppercase;
+      color: rgba($color: #fff, $alpha: 0.5);
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+  }
 }
 /**
 * ? Tablet
@@ -170,6 +185,11 @@
           }
         }
       }
+    }
+
+    #order {
+      background: url("../assets/plan/desktop/bg-order-summary.png");
+      padding: 27px 43px 27px 44px;
     }
   }
 }
@@ -284,6 +304,10 @@
           }
         }
       }
+    }
+
+    #order {
+      @include pX(64px);
     }
   }
 }

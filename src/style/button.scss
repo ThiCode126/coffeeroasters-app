@@ -1,10 +1,113 @@
-.create-btn {
-  background-color: var(--darkCyan);
-  border-radius: 6px;
-  width: 217px;
-  height: 56px;
-  margin: 0 auto;
+.btn {
+  cursor: pointer;
   @include flexCenter;
   @include fraunces;
-  @include text(18px, 28px);
+  @include text(18px, 25px);
+  background-color: var(--darkCyan);
+  border-radius: 6px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.create-btn {
+  width: 217px;
+}
+.checkout-btn {
+  width: 279px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include flexCenter;
+
+  .Modal {
+    position: absolute;
+    top: 35px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    background-color: var(--lightCream);
+    width: 327px;
+    height: 597px;
+    border-radius: 8px;
+
+    .header {
+      background: url("../assets/plan/mobile/bg-order-summary.png");
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      padding: 28px 68px 28px 24px;
+      .title {
+        @include fraunces;
+        @include text(28px, 32px);
+      }
+    }
+
+    .body {
+      padding: 40px 24px 24px;
+      .order-text {
+        color: var(--grey);
+      }
+      .check-text {
+        @include text(15px, 25px);
+        color: var(--darkGreyBlue);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+/**
+* ? Tablet
+*/
+@media (min-width: 768px) {
+  .checkout-btn {
+    margin: 0;
+    width: 217px;
+  }
+  body {
+    .Overlay {
+      .Modal {
+        top: 214px;
+        width: 540px;
+        height: 597px;
+
+        .header {
+          padding: 48px 148px 40px 56px;
+          .title {
+            @include text(40px, 48px);
+          }
+        }
+
+        .body {
+          padding: 57px 56px 56px;
+          .check-text {
+            @include text(16px, 26px);
+            margin-top: 7px;
+          }
+        }
+
+        .wrap-btn {
+          display: flex;
+          align-items: center;
+          margin-top: 47px;
+          .price-month {
+            color: var(--darkGreyBlue);
+            margin-right: 13px;
+            @include fraunces;
+            @include text(32px, 36px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .checkout-btn {
+    margin-right: 0;
+  }
 }
