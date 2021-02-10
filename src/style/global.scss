@@ -63,5 +63,13 @@ body {
     section {
       margin-bottom: 200px;
     }
+
+    section#hero {
+      margin-bottom: 168px !important;
+    }
+
+    #home section#hero {
+      margin-bottom: 136px !important;
+    }
   }
 }
