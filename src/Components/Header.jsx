@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "../utils/useWindowDimensions";
 
-import svgLogo from "../assets/logo.svg";
-import svgOpen from "../assets/icon-hamburger.svg";
-import svgClose from "../assets/icon-close.svg";
-
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const { isMobile } = useWindowDimensions();
@@ -18,9 +14,17 @@ const Header = () => {
     return (
       <div className="toggle-menu" onClick={toggleMenu}>
         {isOpenMenu ? (
-          <img src={svgClose} className="close-menu" alt="close menu" />
+          <img
+            src="./assets/icon-close.svg"
+            className="close-menu"
+            alt="close menu"
+          />
         ) : (
-          <img src={svgOpen} className="open-menu" alt="open menu" />
+          <img
+            src="./assets/icon-hamburger.svg"
+            className="open-menu"
+            alt="open menu"
+          />
         )}
       </div>
     );
@@ -49,7 +53,7 @@ const Header = () => {
     <header>
       <div className="content-wrapper">
         <div className="in-header">
-          <img src={svgLogo} className="logo" alt="logo" />
+          <img src="./assets/logo.svg" className="logo" alt="logo" />
 
           <Menu />
         </div>
