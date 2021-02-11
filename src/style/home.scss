@@ -1,22 +1,32 @@
 #home {
   #collection {
     h2.title {
-      background: linear-gradient(
-        var(--darkGreyBlue) 0%,
-        var(--lightCream) 100%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       @include fraunces;
       @include text(40px, 72px);
       text-align: center;
       color: var(--grey);
       margin: 0 0 13px;
+      position: relative;
+      z-index: 5;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: -24px;
+        background: linear-gradient(
+          180deg,
+          rgba(254, 252, 247, 0.0001) 0%,
+          #fefcf7 100%
+        );
+        width: 375px;
+        height: 72px;
+      }
     }
 
     .cards {
       @include grid1C(48px);
+      position: relative;
+      z-index: 20;
 
       .card-article {
         @include flexCenter;
@@ -131,12 +141,19 @@
   #home {
     #collection {
       h2.title {
-        @include text(96px, 118px);
+        @include text(96px, 76px);
         margin: 0;
+
+        &::after {
+          width: 689px;
+          height: 118px;
+          left: 0;
+          bottom: 0;
+        }
       }
 
       .cards {
-        margin-top: -47px;
+        margin-top: -26px;
 
         .card-article {
           display: grid;
@@ -237,11 +254,20 @@
   #home {
     #collection {
       h2.title {
-        @include text(156px, 196px);
+        @include text(150px, 72px);
+        width: 1072px;
+        margin: 0 auto;
+
+        &::after {
+          width: 1111px;
+          height: 196px;
+          left: 0;
+          bottom: -38px;
+        }
       }
 
       .cards {
-        margin: -77px auto 0;
+        margin: -18px auto 0;
         width: 1111px;
         grid-auto-flow: column;
         grid-auto-columns: 255px;
