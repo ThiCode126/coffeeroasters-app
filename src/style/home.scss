@@ -218,6 +218,10 @@
         margin-bottom: 40px;
       }
 
+      .bandeau {
+        margin-bottom: 48px;
+      }
+
       .cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -311,8 +315,17 @@
 
     #works {
       text-align: left;
+
+      .in-works {
+        padding-left: 85px;
+        padding-right: 150px;
+      }
       .title {
         margin-bottom: 80px;
+      }
+
+      .bandeau {
+        margin-bottom: 67px;
       }
 
       .cards {
