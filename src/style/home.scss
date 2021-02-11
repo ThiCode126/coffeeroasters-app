@@ -253,7 +253,8 @@
 @media (min-width: 1440px) {
   #home {
     #collection {
-      padding-top: 76px;
+      padding-top: 72px;
+      // padding-top: 76px;
 
       h2.title {
         @include text(150px, 72px);
